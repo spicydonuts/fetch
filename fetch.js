@@ -1,4 +1,4 @@
-(function() {
+(function(self) {
   'use strict';
 
   if (self.fetch) {
@@ -341,4 +341,4 @@
     return new Request(url, options).fetch()
   }
   self.fetch.polyfill = true
-})();
+})(global);
